@@ -12,6 +12,8 @@ public class Calculator {
        
 	System.out.print("Input the first number: ");
 		int num1 = scanCalc.nextInt();
+
+		scanCalc.nextLine();
 	
 	System.out.print("Input the operator that is : ");
 		operator = scanCalc.nextLine();
@@ -20,44 +22,43 @@ public class Calculator {
 		int num2 = scanCalc.nextInt();
 	
        
-      Switch(Operator){
+      switch (operator) {
 
-		case"/":
-			System.out.println(devide(num1, num2));
+		case "/":
+			System.out.println(divide(num1, num2));
 			break;
 
-		case"x":
+		case "x":
 			System.out.println(multiply(num1, num2));
 			break;
 
-		case"+":
+		case "+":
 			System.out.println(add(num1, num2));
 			break;
 
-		case"-":
-			System.out.println(substract(num1, num2));
+		case "-":
+			System.out.println(subtract(num1, num2));
 	
 	}
+}
 
-    public String add(int a, int b) {
-	   
+    public String add (int num1, int num2) {
+	  int addition = num1 + num2;
+		return num1 + " + " + num2 + " = " + addition; 
     }
 
-    public String subtract(int a, int b) {
-        /**
-         * Enter logic
-         */
+    public String subtract (int num1, int num2) {
+       int subtract = num1 - num2;
+		return num1 + " - " + num2 + " = " + subtract;
     }
 
-    public String multiply(int a, int b) {
-        /**
-         * Enter logic
-         */
+    public String multiply (int num1, int num2) {
+        int multiply = num1 * num2;
+		return num1 + " x " + num2 + " = " + multiply;
     }
 
-    public String divide(int a, int b) {
-        /**
-         * Enter logic
-         */
+    public String divide (int num1, int num2) {
+        double divide = num1 /(double) num2;
+		return num1 + " / " + num2 + " = " + divide;
     }
 }

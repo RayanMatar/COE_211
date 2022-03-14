@@ -1,6 +1,5 @@
 public class BasicWeek {
   
-    private String day_1 = "Monday";
     		String day_1 = "Monday";
 		String day_2 = "Tuesday";
 		String day_3 = "Wednesday";

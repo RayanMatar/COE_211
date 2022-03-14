@@ -20,10 +20,6 @@ public class AdvancedWeek {
 
 	String day_7 = "Sunday";
 	int day_7_index = 7;
-	}
-}
-    
-   
 	
     	public void printDays() {
         System.out.println(day_1_index + ": " + day_1 + ",\n" +
@@ -33,4 +29,5 @@ public class AdvancedWeek {
 				   day_5_index + ": " + day_5 + ",\n" +
 			         day_6_index + ": " + day_6 + ",\n" +
 				   day_7_index + ": " + day_7 + "+");
+	}
 }
